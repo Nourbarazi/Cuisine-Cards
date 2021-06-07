@@ -1,0 +1,193 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    color:#FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    height:100vh;
+    padding:15px;
+    display:flex;
+    justify-content:space-around;
+    
+}
+
+
+
+main section{
+    width: calc((80% - 60px) / 3);
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:900px){
+
+    main{
+        flex-wrap: wrap;
+        font-size:0.8rem;
+        height: auto
+    }
+
+    main section{
+        width:60%;
+        margin-bottom:10px
+    }
+
+    main section .container{
+        margin-bottom:10px
+    }
+}
+
+main section .container{
+    line-height:1.2;
+    border-radius:5px;
+    transition: all .3s linear
+}
+
+main section .container:hover{
+    transform: scale(1.1, 1.1)
+}
+
+main .column-2 .small{
+    display:flex;
+    align-items: center;
+
+}
+
+
+main .column-1 .middel{
+    background-color:#EDBF47
+}
+
+main .column-1 .small{
+    background-color:#6FC191;
+}
+
+main .column-2 .small{
+    background-color:#EC774B
+}
+
+main .column-2 .middel{
+    background-color:#E16C6C
+}
+
+main .column-3 .big{
+    background-color:#74CEE4
+}
+
+main .column-3 .x-small{
+    background-color:#C389CE
+}
+
+main section .small{
+    flex-basis: 100%;
+    height:35vh;
+}
+
+main section .middel{
+    flex-basis: 100%;
+    height:55vh;
+}
+
+main section .big{
+    flex-basis: 100%;
+    height:70vh;
+}
+
+main section .x-small{
+    flex-basis: 100%;
+    height:20vh;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+main section img{
+    display:block;
+    width: 100%;
+    height:50%;
+    border-radius:5px;
+    object-fit: cover;
+    
+}
+
+main .column-1 .small .cooking{
+    height:80%
+}
+
+main .column-1 .small h2{
+    padding: 10px;
+}
+
+main .column-2 .small .quote{
+    text-align: center;
+}
+
+main .column-2 .small h2{
+    padding: 20px;
+}
+
+
+main section .info{
+    padding:10px 15px;
+    height:50%;
+    display:flex;
+    flex-wrap:wrap;
+    align-content: space-around;
+}
+
+main section .info button{
+    display: block;
+    padding: 7px 10px;
+    border:1px solid #DDD;
+    cursor:pointer;
+    transition: all .3s linear;
+    background-color: transparent;
+    color: #fff;
+    
+}
+
+main section .info button:hover{
+    background-color:#FFF;
+}
+
+main .column-1 .info button:hover{
+    color:#EDBF47
+}
+
+main .column-2 .info button:hover{
+    color:#E16C6C;
+}
+
+main .column-3 .info button:hover{
+    color:#74CEE4;
+}
+
+main .column-3 .x-small a{
+    display:block;
+    color:#FFF;
+    text-decoration:none;
+    font-size:25px;
+    margin-right:10px;
+    transition:all .3s linear
+}
+
+main .column-3 .x-small a:hover{
+    opacity:.7
+}
+
+
+
+
+
